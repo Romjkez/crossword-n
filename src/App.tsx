@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import './App.css';
 import Crossword, { CrosswordImperative } from '@jaredreisinger/react-crossword';
-import { CluesInput, Direction } from '@jaredreisinger/react-crossword/dist/types';
+import { CluesInput } from '@jaredreisinger/react-crossword/dist/types';
 import { Dialog } from 'primereact/dialog';
 import { Button } from 'primereact/button';
 
@@ -141,20 +141,12 @@ function App() {
     let crosswordRef = useRef<CrosswordImperative>(null)
 
     function onComplete(isCorrect: boolean) {
-        console.log('completed!')
+        console.log('isFinished:', isFinished)
+        console.log('isCorrect:', isCorrect)
         if (!isFinished && isCorrect) {
             setIsSuccessModalVisible(true)
             setIsFinished(true)
         }
-    }
-
-    function onAnswerComplete() {
-        // console.log(crosswordRef.current?.isCrosswordCorrect());
-    }
-
-    function onLoaded(a: Direction, num: string, answer: string) {
-        console.log(a, num, answer)
-        console.log(crosswordRef.current?.isCrosswordCorrect());
     }
 
     return (
@@ -170,8 +162,7 @@ function App() {
                 Требуй от своих (надеюсь, что всё еще любимых!) друзей подарок! Только без ногтей и укусов! Но драки
                 подушками и щекотки не запрещены...
             </Dialog>
-            <Crossword ref={crosswordRef} data={data} onCrosswordComplete={onComplete}
-                       onAnswerComplete={onAnswerComplete} onAnswerCorrect={onLoaded}/>
+            <Crossword ref={crosswordRef} data={data} onCrosswordComplete={onComplete} useStorage={false}/>
             <Button label="Открыть фото (вопрос 7)" onClick={() => window.open('https://vk.cc/cbW0yy', '_blank')}/>
         </div>
     )
