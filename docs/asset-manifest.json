@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/crossword-n/static/css/main.c49b82e8.css",
-    "main.js": "/crossword-n/static/js/main.c7f6911e.js",
+    "main.js": "/crossword-n/static/js/main.36fc188f.js",
     "static/js/787.bf2b540e.chunk.js": "/crossword-n/static/js/787.bf2b540e.chunk.js",
     "static/media/primeicons.svg": "/crossword-n/static/media/primeicons.c6e2053303524e39530c.svg",
     "static/media/primeicons.eot": "/crossword-n/static/media/primeicons.7fc4d8e224d1ff1b9c62.eot",
@@ -9,11 +9,11 @@
     "static/media/primeicons.ttf": "/crossword-n/static/media/primeicons.91bacab1f083f2795272.ttf",
     "index.html": "/crossword-n/index.html",
     "main.c49b82e8.css.map": "/crossword-n/static/css/main.c49b82e8.css.map",
-    "main.c7f6911e.js.map": "/crossword-n/static/js/main.c7f6911e.js.map",
+    "main.36fc188f.js.map": "/crossword-n/static/js/main.36fc188f.js.map",
     "787.bf2b540e.chunk.js.map": "/crossword-n/static/js/787.bf2b540e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c49b82e8.css",
-    "static/js/main.c7f6911e.js"
+    "static/js/main.36fc188f.js"
   ]
 }
